@@ -11,7 +11,7 @@
 
     - name: Copy index.html file in /var/www/html/
       copy:
-       src: /root/index.html
+       src: ~/Ansible/*
        dest: /var/www/html
  
     - name: Start service httpd
