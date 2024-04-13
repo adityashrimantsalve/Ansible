@@ -14,12 +14,12 @@
        src: ~/Ansible/*
        dest: /var/www/html
  
-    - name: Start service httpd
+    - name: Start service apache
       service:
        name: apache2
        state: started
 
-    - name: Enable service apache2
+    - name: Enable service apache
       service:
        name: apache2
        enabled: yes
